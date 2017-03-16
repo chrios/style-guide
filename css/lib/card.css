@@ -1,0 +1,67 @@
+/*
+	These are the card components from last week.
+	Create a new content card component that allows users to click anywhere on the card, instead of just the "read more" button at the bottom
+
+	tip: You will need to use an `a` tag with `display:block;` set, and a href (jet set it to `#` for now as we don't care where it goes)
+*/
+
+.card__grid {
+  padding-top: 40px;
+  padding-bottom: 14px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  margin-bottom: 28px;
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__text,
+.card__footer {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.card__title {
+  font-size: 1.25em;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+	.card {
+		float: none;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 400px;
+	}
+
+	.card:nth-child(3n) {
+  		margin-right: auto;
+	}
+}

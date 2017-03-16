@@ -1,0 +1,104 @@
+
+/*------------------------*/
+/*---NAVIGATION LAYOUT----*/
+/*------------------------*/
+
+.nav__header {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin: 0;
+	position: relative;
+	top: 65%;
+}
+
+.nav__item {
+	margin: 0;
+}
+
+
+
+.nav__image {
+	max-width: 100%;
+}
+
+.nav {
+	height: 350px;
+	background-image: url("../../images/nav-image.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+
+header {
+
+	margin-bottom: 80px;
+}
+
+
+/*------------------------*/
+/*-----RESPONSIVE NAVBAR--*/
+/*------------------------*/
+
+
+@media only screen and (min-width: 1079px) {
+	.nav__container {
+		float: right;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		padding: 0;
+	}
+	
+	.nav__item {
+		width: 80px;
+		height: 80px;
+		padding-left: 5%;
+		padding-top: 5%;
+		margin-top: 2.5%;
+	}
+
+	
+
+	body {
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+
+	.nav__item:hover,
+	.nav__item--current {
+		width: 90px;
+		height: 90px;
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 1079px) {
+	
+		
+
+	.nav__container {
+		padding: 0;
+		margin: 0;
+		display:relative;
+		top:50%;
+	}
+	
+	.nav__item {
+		width: 33.3333%;
+		margin: 1.25%;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin: 0;
+		float: left;
+		background-color: white;
+	}
+
+	.nav__item:hover,
+	.nav__item--current {
+		font-size: 1.5em;
+	}
+}

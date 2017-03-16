@@ -1,0 +1,97 @@
+/*------------------------*/
+/*--------BASELINE--------*/
+/*------------------------*/
+
+body {
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 1.25%;
+	padding-right: 1.25%;
+}
+
+
+/*------------------------*/
+/*--------TYPOGRAPHY------*/
+/*------------------------*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*----NAV---*/
+
+.nav__header {
+	font-family: 'Muli', sans-serif;
+	text-align: center;
+}
+
+.nav__item {
+	list-style: none;
+}
+
+.nav__link {
+	text-decoration: none;
+}
+
+/*----CONTENT---*/
+
+
+.content__heading,
+.content__sub-heading {
+	font-family: 'Muli', sans-serif;
+}
+
+.content__heading {
+	text-align: center;
+}
+
+.content__sub-heading {
+	text-align: left;
+}
+
+.content__link {
+	text-decoration: none;
+}
+
+.content__list-item {
+	list-style: square;
+}
+
+.content__link:hover {
+	text-decoration: underline;
+}
+
+
+/*------------------------*/
+/*-----CONTENT LAYOUT-----*/
+/*------------------------*/
+
+content__sub-container {
+	float: none;
+}
+
+.content__list-item {
+	text-align: left;
+	margin-left: 5%;
+}
+
+.content__image {
+
+	border-radius: 10px;
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+}
+
+.content__image--right {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.content__image--centre {
+	margin: auto;
+	text-align: center;
+	width: 60%;
+	display: block;
+}
