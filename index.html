@@ -3,54 +3,65 @@
     <head>
         <meta charset="utf-8">
         <title>About Living Style Guides</title>
-        <meta name="description" content="About Living Style Guides and a collection of Living Style Guide articles">    
+        <meta name="description" content="About Living Style Guides and a collection of Living Style Guide articles"> 
+		<link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet"> 
 	</head>
     <body>
-		<style>
-			body {
-				font-family: sans-serif;
-				max-width: 720px;
-			}
+		<header>
+			<nav class="nav">
+				<h1 class="nav__header">LIVING STYLE GUIDE FOR HIT235</h1>		
+			
+			</nav>
 
-			h1 {
-				font-size: 1.5em;
-			}
+			<ul class="nav__container">
+					<a class="nav__link" href="index.html"><li class="nav__item nav__item--current">Home</li></a>
+					<a class="nav__link"  href="about.html"><li class="nav__item">About</li></a>
+					<a class="nav__link"  href="styles.html"><li class="nav__item">Styles</li></a>
+			</ul>
+		</header>
 
-			h2 {
-				font-size: 1em;
-			}
-		</style>
-        <section>
-			<h1>All about Living Style Guides</h1>
-            <h2>What is a Living Style Guide?</h2>
-            <p>A living style guide is an instruction manual for designers to help them build pages for a website.  Often a Living Style Guide is a template which shows all of the website or app styling. Living Style Guides list all of the components of a website in a format which makes it easy for designers and developers to pull the component from. "Living" implies that the Style Guide is evolving and changes with the code base for the project.</p>
-            <h2>Why is a Living Style Guide useful to developers and designers?</h2>
-            <p>Without a style guide, designers will often make small errors in their prototyping.  For instance, a designer might make a button have slightly different padding on a certain page.  This, spread over an entire project, will cause inconsistancies in design.</p>
-			<o>Developers will often use code snippets from style guides to code the web page.  This makes sure that all of the code in the project follows certain guidelines, which will make it easier to maintain in the future. There are also a lot of other benefits to using templated code in web development.</p>
-		</section>
-		<section>
-			<h1>Living Style Guide resources</h1>
-            <h2>Some handy Living Style Guide tips</h2>
-            <ul>
-				<li>Use a static style guide generator to create your Style Guide</li>
-				<li>Make your style guide include code snippets on the presented page</li>
-				<li>Keep your style guide up to date with the latest standards</li>
-				<li>Keep evolving your style guide when you make design decisions on your website</li>
-			</ul>
-			<h2>Some great Living Style Guide websites</h2>
-			<ul>
-				<a href="http://styleguides.io/examples.html"><li>styleguides.io</li></a> 
-				<a href="https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/"><li>Creating a Living Style Guide Case Study</li></a>
-				<a href="https://www.smashingmagazine.com/2015/04/an-in-depth-overview-of-living-style-guide-tools/"><li>In Depth Overview of Living Style Guide Tools</li></a>
-			</ul>
-		</section>
-		<section>
-			<h1>References</h1>
-			<ul>
-				<li>Haritonov, R. and Haritonov, R. (2015). An In-Depth Overview Of Living Style Guide Tools – Smashing Magazine. [online] Smashing Magazine. Available at: https://www.smashingmagazine.com/2015/04/an-in-depth-overview-of-living-style-guide-tools/ [Accessed 22 Feb. 2017].</li>
-				<li>Hildebrandt, P. (2015). What Is a Living Style Guide?. [online] Gaslight. Available at: https://teamgaslight.com/blog/what-is-a-living-style-guide [Accessed 22 Feb. 2017].</li>
-				<li>Lambert, S. and Lambert, S. (2016). Creating A Living Style Guide: A Case Study – Smashing Magazine. [online] Smashing Magazine. Available at: https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/ [Accessed 22 Feb. 2017].</li>
-			</ul>
-		</section>
-    </body>
+		<h1 class="content__heading">Welcome to my Living Style Guide Website</h1>
+		<p class="content__text">What you will find here is a compilation of some styles i've put together for my university class with Barbara White. Hope you enjoy and can take some ideas to use in your latest project.</p>
+
+
+		<main class="card__grid" role="main">
+
+			
+		        <article class="card">
+		            <img src="images/thumb/woman-using-phone.jpg" alt="" class="card__image">
+		            <div class="card__text">
+		                <h2 class="card__title">95% homegrown</h2>
+		                <p>My styles are nearly all homemade, except for a few bits and bobs i've picked up from making pages for friends and family.</p>
+		            </div>
+		            <footer class="card__footer">
+		            </footer>
+		        </article>
+
+		        <article class="card">
+		            <!-- Image attribution https://commons.wikimedia.org/wiki/File:Ermenonville_PM_086363_F.jpg -->
+		            <img src="images/thumb/typing-on-keyboard.jpg" alt="" class="card__image">
+		            <div class="card__text">
+		                <h2 class="card__title">This is a card</h2>
+		                <p>Cards are a cool way of making information known to a customer, or drawing their attention to an area.. Call to action anyone??</p>
+		            </div>
+		            <footer class="card__footer">
+		            </footer>
+		        </article>
+
+
+		        <article class="card">
+		            <!-- Image attribution https://commons.wikimedia.org/wiki/File:Santuari_de_Lord_PM_088908_E.jpg -->
+		            <img src="images/thumb/laptop-workstation.jpg" alt="" class="card__image">
+		            <div class="card__text">
+		                <h2 class="card__title">Responsive fever</h2>
+		                <p>Go ahead and resize the page, have a look to see what changes.. you never know what you will find!!</p>
+		            </div>
+		            <footer class="card__footer">
+		            </footer>
+		        </article>
+
+        </main>
+
+	</body>
 </html>
