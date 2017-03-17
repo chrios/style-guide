@@ -95,3 +95,44 @@ content__sub-container {
 	width: 60%;
 	display: block;
 }
+
+
+/*------------------------*/
+/*-----TABLE   LAYOUT-----*/
+/*------------------------*/
+
+
+.table__container {
+	border-collapse: collapse;
+	width: 60%;
+	margin: auto;
+	border: 1px solid #ddd;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+	text-align: center;
+	padding: 5px;
+}
+
+/*------------------------*/
+/*-----FORMS   LAYOUT-----*/
+/*------------------------*/
+
+.form__fieldset {
+	
+}
+
+.form__input--text {
+}
+
+.form__legend {
+}
+
+.form__label {
+}
+
+
+
+
+

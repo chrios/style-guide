@@ -21,6 +21,8 @@
 			</ul>
 		</header>
 
+
+
 		<section class="content__main-container" id="styles">
 		    <h1 class="content__heading">CSS Basic Elements</h1>
 		    <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
@@ -29,6 +31,11 @@
 			<img class="content__image--centre" src="images/color-scheme.png" alt="Color Swatch">
 
 			<p class="content__text">I chose these colors to simplify development. I can change the color scheme very easily in the css/lib/color.css file.</p>
+
+		    <hr>
+			<h1 class="content__heading">Accessibility</h1>
+			<p class="content__text">My color scheme is AAA rated on the <a href="webaim.org/resources/contrastchecker?fcolor=0000ff&bcolor=1d427d">WebAIM</a> ratings scale with a contrast ratio 9.87:1.</p>
+			<p class="content__text">I've strived to make my images have descriptive names and 'alt' text for screen readers or slow networks.</p>
 
 		    <hr>
 		    <h1 class="content__heading">Headings</h1>
@@ -67,14 +74,14 @@
 		    </ul>
 		    <hr>
 		    <h1 class="content__heading">Fieldsets, Legends, and Form Elements</h1>
-		    <fieldset>
-		        <legend>Legend</legend>
-		        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+		    <fieldset class="form__fieldset">
+		        <legend class="form__legend">Legend</legend>
+		        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 		        <form>
 		            <h2 class="content__sub-heading">Form Element</h2>
 		            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
-		            <p><label for="text_field">Text Field:</label><br>
-		            <input type="text" id="text_field" /></p>
+		            <p><label class="form__label" for="text_field">Text Field:</label><br>
+		            <input class="form__input--text" type="text" id="text_field" /></p>
 		            <p><label for="text_area">Text Area:</label><br>
 		            <textarea id="text_area"></textarea></p>
 		            <p><label for="select_element">Select Element:</label><br>
@@ -112,9 +119,9 @@
 		    </fieldset>
 		    <hr>
 		    <h1 class="content__heading">Tables</h1>
-		    <table>
+		    <table class="table__container">
 		        <tr>
-		            <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+		            <th class="table__header">Table Header 1</th><th class="table__header">Table Header 2</th><th class="table__header">Table Header 3</th>
 		        </tr>
 		        <tr>
 		            <td>Division 1</td><td>Division 2</td><td>Division 3</td>
