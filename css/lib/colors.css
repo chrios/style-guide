@@ -102,7 +102,7 @@ body {
 /*----ACCORDION---*/
 button.accordion {
 
-    background-color: #6f87ae;
+    background-color: #1D427D;
     color: white;
 }
 div.accordion__panel {
@@ -114,7 +114,7 @@ div.accordion__panel {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #3c5d90;
+    background-color: #082C63;
     color: white;
 
 }

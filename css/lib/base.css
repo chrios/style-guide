@@ -63,9 +63,6 @@ body {
 }
 
 
-
-
-
 /*------------------------*/
 /*-----CONTENT LAYOUT-----*/
 /*------------------------*/
@@ -86,6 +83,8 @@ body {
 	margin-bottom: 70px;
 	border-radius: 5px;
 }
+
+
 
 .content__sub-container {
 
@@ -115,7 +114,29 @@ body {
 	text-align: center;
 	width: 60%;
 	display: block;
+	margin-bottom: 10px;
 }
+
+
+
+@media only screen and (max-width: 1079px) {
+    .content__image--centre {
+    	width: 100%;
+
+    }
+
+    .content__main-container {
+    	padding-left: 2.5%;
+    	padding-right: 2.5%;
+    	margin-left: 2.5%;
+    	margin-right: 2.5%;
+    }
+
+	    section#first {
+		margin-top: 100px;
+	}
+}
+
 
 
 /*------------------------*/

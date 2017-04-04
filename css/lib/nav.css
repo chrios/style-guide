@@ -28,6 +28,10 @@
 	margin-bottom: 50px;
 }
 
+.nav__link {
+	color: white;
+}
+
 
 header {
 	margin-bottom: 0;
@@ -54,6 +58,7 @@ header {
 		padding-left: 5%;
 		padding-top: 5%;
 		margin-top: 2.5%;
+		color: white;
 	}
 
 	
@@ -101,10 +106,6 @@ header {
 	}
 
 
-
-	#home {
-		margin-top: 75px;
-	}
 
 	.nav {
 		margin-bottom: 0;

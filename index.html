@@ -1,8 +1,6 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
         <meta charset="utf-8">
 
@@ -12,7 +10,8 @@
 
         <meta name="description" content="About Living Style Guides and a collection of Living Style Guide articles"> 
 
-		<link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 		<link href="css/main.css" rel="stylesheet"> 
 	</head>
@@ -29,12 +28,12 @@
 		</header>
 
 		<ul class="nav__container">
-					<a class="nav__link" href="#home"><li class="nav__item nav__item--current">Home</li></a>
-					<a class="nav__link"  href="#about"><li class="nav__item">About</li></a>
-					<a class="nav__link"  href="#styles"><li class="nav__item">Styles</li></a>
-			</ul>
+					<li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+					<li class="nav__item"><a class="nav__link"  href="#about">About</a></li>
+					<li class="nav__item"><a class="nav__link"  href="#styles">Styles</a></li>
+		</ul>
 
-		<section class="content__main-container">
+		<section class="content__main-container" id="first">
 
 		<h2 class="content__heading">Pick and choose your components from my styles list!</h2>
 
@@ -62,7 +61,7 @@
 			</section>
 
 			<section class="content__sub-container">
-
+				<h2 class="content__sub-heading">Some style guide resources</h2>
 		        <h3 class="content__sub-heading">Some handy Living Style Guide tips</h3>
 
 		        <ul class="content__list">
@@ -139,11 +138,11 @@
 		    <button class="accordion">Paragraph</button>
 
 		    <div class="accordion__panel">
-			    <img class="content__image content__image--right" src="http://placehold.it/150x125?text=content__image--right">
+			    <img class="content__image content__image--right" src="http://placehold.it/150x125?text=content__image--right" alt="placeholder image for right aligned image">
 
 			    <p>Lorem ipsum dolor sit amet, <a class="content__link" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
-				<img class="content__image" src="http://placehold.it/150x125?text=content__image">
+				<img class="content__image" src="http://placehold.it/150x125?text=content__image" alt="placeholder image for left aligned image">
 
 			    <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
@@ -210,7 +209,7 @@
 
 			            </select></p>
 
-			            <p><label for="radio_buttons">Radio Buttons:</label><br>
+			            <p><label for="radio_button">Radio Buttons:</label><br>
 			                <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1<br>
 			                    <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2<br>
 			                    <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3<br>
@@ -405,7 +404,9 @@
 		    </table>-->
 
 		</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	
 	<script src="js/lib/accordion.js"></script>
 	<script src="js/lib/smoothscroll.js"></script>
+	<script src="js/lib/scrollDetect.js"></script>
 	</body>
 </html>
