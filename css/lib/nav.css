@@ -15,8 +15,6 @@
 	margin: 0;
 }
 
-
-
 .nav__image {
 	max-width: 100%;
 }
@@ -27,12 +25,12 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 
 
 header {
-
-	margin-bottom: 80px;
+	margin-bottom: 0;
 }
 
 
@@ -41,7 +39,7 @@ header {
 /*------------------------*/
 
 
-@media only screen and (min-width: 1079px) {
+@media only screen and (min-width: 1080px) {
 	.nav__container {
 		float: right;
 		position: fixed;
@@ -80,8 +78,8 @@ header {
 	.nav__container {
 		padding: 0;
 		margin: 0;
-		display:relative;
-		top:50%;
+		top:0;
+		position: sticky;
 	}
 	
 	.nav__item {
@@ -101,4 +99,16 @@ header {
 	.nav__item--current {
 		font-size: 1.5em;
 	}
+
+
+
+	#home {
+		margin-top: 75px;
+	}
+
+	.nav {
+		margin-bottom: 0;
+
+	}
+
 }

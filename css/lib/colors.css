@@ -49,10 +49,16 @@
 
 
 
-
+html {
+	background-color: #cecece;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
 
 body {
  color: #black;
+}
+
+.content__main-container {
 	background-color: white;
 }
 
@@ -93,22 +99,27 @@ body {
 	color: #B61C2B;
 }
 
-/*----CARD---*/
+/*----ACCORDION---*/
+button.accordion {
 
-
-.card__link:hover,
-.card__link:focus {
-  background-color: #0288D1;
+    background-color: #6f87ae;
+    color: white;
+}
+div.accordion__panel {
+    background-color: white;
+    /*
+    border-color: #3c5d90;
+    border-style: solid;
+    border-width: 1px;*/
 }
 
-.card__link:active {
-  background-color: #039BE5;
+button.accordion.active, button.accordion:hover {
+    background-color: #3c5d90;
+    color: white;
+
 }
 
-
-
-.table__headers {
-	border-color: #1D427D;
+/*accordion icons*/
+button.accordion:after {
+    color: #777;
 }
-
-
