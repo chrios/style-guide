@@ -1,0 +1,13 @@
+.listen__colors--basket,
+.listen__headings--basket,
+.listen__paragraph--basket,
+.listen__list--basket,
+.listen__form--basket,
+.listen__table--basket {
+	display: none;
+}
+
+.basket__container {
+	width:100%;
+
+}
