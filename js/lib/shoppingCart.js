@@ -88,7 +88,11 @@ if (typeof(Storage) !== "undefined") {
 																					/*console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );*/
 																					listOfSelectedObjects += localStorage.key(i) + "<br>";
 																				}
-																				document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
+																				if (listOfSelectedObjects !== "<br>") {
+																					document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
+																				} else {
+																					document.getElementById("basket__container--update").innerHTML = "None Selected!!!";
+																				}
 																			});
 
 } else {
