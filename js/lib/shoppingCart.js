@@ -35,27 +35,47 @@ if (typeof(Storage) !== "undefined") {
 
 	document.getElementById("listen__headings").addEventListener("click", 	function(){	
 	    																		/*console.log(idArray[1]);*/
-																				localStorage.setObj(1, idArray[1]);
+																				if (localStorage.getObj(1) === idArray[1]) {
+																					localStorage.setObj(1, null);
+																				} else {
+																					localStorage.setObj(1, idArray[1]);
+																				}
 																			});
 
 	document.getElementById("listen__paragraph").addEventListener("click", 	function(){	
 	    																		/*console.log(idArray[2]);*/
-																				localStorage.setObj(2, idArray[2]);
+																				if (localStorage.getObj(2) === idArray[2]) {
+																					localStorage.setObj(2, null);
+																				} else {
+																					localStorage.setObj(2, idArray[2]);
+																				}
 																			});
 
 	document.getElementById("listen__list").addEventListener("click", 		function(){	
 	    																		/*console.log(idArray[3]);*/
-																				localStorage.setObj(3, idArray[3]);
+																				if (localStorage.getObj(3) === idArray[3]) {
+																					localStorage.setObj(3, null);
+																				} else {
+																					localStorage.setObj(3, idArray[3]);
+																				}
 																			});
 
 	document.getElementById("listen__form").addEventListener("click",  		function(){	
 	    																		/*console.log(idArray[4]);*/
-																				localStorage.setObj(4, idArray[4]);
-	    																	});
+																				if (localStorage.getObj(4) === idArray[4]) {
+																					localStorage.setObj(4, null);
+																				} else {
+																					localStorage.setObj(4, idArray[4]);
+																				}
+																			});
 
 	document.getElementById("listen__table").addEventListener("click",  	function(){	
 	    																		/*console.log(idArray[5]);*/
-																				localStorage.setObj(5, idArray[5]);
+																				if (localStorage.getObj(5) === idArray[5]) {
+																					localStorage.setObj(5, null);
+																				} else {
+																					localStorage.setObj(5, idArray[5]);
+																				}
 																			});
 	
 
