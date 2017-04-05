@@ -59,7 +59,7 @@ if (typeof(Storage) !== "undefined") {
 																				  /*here insted of console.log you would send the html + css of the element to the customer email address using php perhaps*/
 																				for (var i = 0; i < localStorage.length; i++) 
 																					console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );
-																					alert ("localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] ");
+																					alert("localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] ");
 
 																			});
 
