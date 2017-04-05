@@ -83,10 +83,10 @@ if (typeof(Storage) !== "undefined") {
 
 	document.getElementById("basket__send").addEventListener("click", 		function(){
 																				  /*here insted of console.log you would send the html + css of the element to the customer email address using php perhaps*/
-																				var listOfSelectedObjects = null;
+																				var listOfSelectedObjects;
 																				for (var i = 0; i < localStorage.length; i++) {
 																					console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );
-																					listOfSelectedObjects += localStorage.key(i) +" has value " + localStorage[localStorage.key(i)];
+																					listOfSelectedObjects += localStorage[localStorage.key(i)] + "\n";
 																				}
 																				document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
 																			});
