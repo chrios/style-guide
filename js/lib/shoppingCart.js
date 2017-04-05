@@ -1,7 +1,7 @@
 if (typeof(Storage) !== "undefined") {
 
 	/*from http://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage */
-	/*allows arrays to be stored in localstorage as JSON */
+	/*allows arrays to be stored in localstorage as JSON using setObj(key, obj) and getObj(key) */
 
 	Storage.prototype.setObj = function(key, obj) {
 	return this.setItem(key, JSON.stringify(obj))
@@ -22,7 +22,9 @@ if (typeof(Storage) !== "undefined") {
 
 	/* EVENT HANDLERS */
 
-	/* each event listener calls addItemToBasket() when button is click and passes the button ID to addItemToBasket() */
+	/*  */
+	/* if item is already associated with a json key when button is click the key is set to null */
+	/* otherwise the elementId is stored in json array within local storage (todo: change to session storage) */
 
 	document.getElementById("listen__colors").addEventListener("click",  	function(){	
 	    																		/*console.log(idArray[0]);*/
@@ -81,8 +83,12 @@ if (typeof(Storage) !== "undefined") {
 
 	document.getElementById("basket__send").addEventListener("click", 		function(){
 																				  /*here insted of console.log you would send the html + css of the element to the customer email address using php perhaps*/
-																				for (var i = 0; i < localStorage.length; i++) 
+																				var listOfSelectedObjects = null;
+																				for (var i = 0; i < localStorage.length; i++) {
 																					console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );
+																					listOfSelectedObjects += localStorage.key(i) +" has value " + localStorage[localStorage.key(i)];
+																				}
+																				document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
 																			});
 
 } else {
