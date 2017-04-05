@@ -86,7 +86,7 @@ if (typeof(Storage) !== "undefined") {
 																				var listOfSelectedObjects = "<br>";
 																				for (var i = 0; i < localStorage.length; i++) {
 																					/*console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );*/
-																					listOfSelectedObjects += localStorage[localStorage.key(i)] + "<br>";
+																					listOfSelectedObjects += localStorage.key(i) + "<br>";
 																				}
 																				document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
 																			});
