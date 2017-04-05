@@ -26,7 +26,11 @@ if (typeof(Storage) !== "undefined") {
 
 	document.getElementById("listen__colors").addEventListener("click",  	function(){	
 	    																		/*console.log(idArray[0]);*/
-																				localStorage.setObj(0, idArray[0]);
+																				if (localStorage.getObj(0) === idArray[0]) {
+																					localStorage.setObj(0, null);
+																				} else {
+																					localStorage.setObj(0, idArray[0]);
+																				}
 																			});
 
 	document.getElementById("listen__headings").addEventListener("click", 	function(){	
