@@ -28,9 +28,22 @@ button.accordion:after {
     font-size: 13px;
     float: right;
     margin-left: 5px;
+    color: white;
 }
 
 button.accordion.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: white;
 }
+
+
+/*------------------------*/
+/*-----NO JS         -----*/
+/*------------------------*/
+
+html.no-js div.accordion__panel {       /* if Modernizr.js does not remove the no-js class from html, */
+    display: block;                     /* display all panels by default*/
+}
+
+
 
