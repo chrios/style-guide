@@ -29,7 +29,7 @@ if (typeof(Storage) !== "undefined") {
 	document.getElementById("listen__colors").addEventListener("click",  	function(){	
 	    																		/*console.log(idArray[0]);*/
 																				if (localStorage.getObj(0) === idArray[0]) {
-																					localStorage.setObj(0, null);
+																					localStorage.setObj(0, );
 																				} else {
 																					localStorage.setObj(0, idArray[0]);
 																				}
@@ -38,7 +38,7 @@ if (typeof(Storage) !== "undefined") {
 	document.getElementById("listen__headings").addEventListener("click", 	function(){	
 	    																		/*console.log(idArray[1]);*/
 																				if (localStorage.getObj(1) === idArray[1]) {
-																					localStorage.setObj(1, null);
+																					localStorage.setObj(1, );
 																				} else {
 																					localStorage.setObj(1, idArray[1]);
 																				}
@@ -47,7 +47,7 @@ if (typeof(Storage) !== "undefined") {
 	document.getElementById("listen__paragraph").addEventListener("click", 	function(){	
 	    																		/*console.log(idArray[2]);*/
 																				if (localStorage.getObj(2) === idArray[2]) {
-																					localStorage.setObj(2, null);
+																					localStorage.setObj(2, );
 																				} else {
 																					localStorage.setObj(2, idArray[2]);
 																				}
@@ -56,7 +56,7 @@ if (typeof(Storage) !== "undefined") {
 	document.getElementById("listen__list").addEventListener("click", 		function(){	
 	    																		/*console.log(idArray[3]);*/
 																				if (localStorage.getObj(3) === idArray[3]) {
-																					localStorage.setObj(3, null);
+																					localStorage.setObj(3, );
 																				} else {
 																					localStorage.setObj(3, idArray[3]);
 																				}
@@ -65,7 +65,7 @@ if (typeof(Storage) !== "undefined") {
 	document.getElementById("listen__form").addEventListener("click",  		function(){	
 	    																		/*console.log(idArray[4]);*/
 																				if (localStorage.getObj(4) === idArray[4]) {
-																					localStorage.setObj(4, null);
+																					localStorage.setObj(4, );
 																				} else {
 																					localStorage.setObj(4, idArray[4]);
 																				}
@@ -74,7 +74,7 @@ if (typeof(Storage) !== "undefined") {
 	document.getElementById("listen__table").addEventListener("click",  	function(){	
 	    																		/*console.log(idArray[5]);*/
 																				if (localStorage.getObj(5) === idArray[5]) {
-																					localStorage.setObj(5, null);
+																					localStorage.setObj(5, );
 																				} else {
 																					localStorage.setObj(5, idArray[5]);
 																				}
@@ -85,8 +85,8 @@ if (typeof(Storage) !== "undefined") {
 																				  /*here insted of console.log you would send the html + css of the element to the customer email address using php perhaps*/
 																				var listOfSelectedObjects;
 																				for (var i = 0; i < localStorage.length; i++) {
-																					console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );
-																					listOfSelectedObjects += localStorage[localStorage.key(i)] + "\n";
+																					/*console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );*/
+																					listOfSelectedObjects += localStorage[localStorage.key(i)] + "<br>";
 																				}
 																				document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
 																			});
