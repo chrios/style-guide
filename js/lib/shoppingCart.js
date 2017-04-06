@@ -1,16 +1,5 @@
 if (typeof(Storage) !== "undefined") {
 
-	/*from http://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage */
-	/*allows arrays to be manipulated in localstorage as JSON using setObj(key, obj) and getObj(key) */
-
-	Storage.prototype.setObj = function(key, obj) {
-	return this.setItem(key, JSON.stringify(obj))
-	}
-
-	Storage.prototype.getObj = function(key) {
-	    return JSON.parse(this.getItem(key))
-	}
-
 	/*ADD Ids TO ARRAY*/
 
 	var idArray = [	document.getElementById("listen__colors").id, 
@@ -29,9 +18,22 @@ if (typeof(Storage) !== "undefined") {
 						document.getElementById("listen__form"), 
 						document.getElementById("listen__table") ];
 
-	/* MAKE VARIABLE FOR BASKET__SEND */
+	/* MAKE VARIABLE FOR BASKET__SEND and basket__send--container */
+
+	var basketContainer = document.getElementById("basket__container--update");
 
 	var basketSend = document.getElementById("basket__send");
+
+	/*from http://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage */
+	/*allows arrays to be manipulated in localstorage as JSON using setObj(key, obj) and getObj(key) */
+
+	Storage.prototype.setObj = function(key, obj) {
+	return this.setItem(key, JSON.stringify(obj))
+	}
+
+	Storage.prototype.getObj = function(key) {
+	    return JSON.parse(this.getItem(key))
+	}
 
 	/* EVENT HANDLERS */
 
@@ -102,9 +104,9 @@ if (typeof(Storage) !== "undefined") {
 														listOfSelectedObjects += localStorage[localStorage.key(i)] + "<br>";
 													}
 													if (listOfSelectedObjects !== "<br>") {
-														document.getElementById("basket__container--update").innerHTML = listOfSelectedObjects;
+														basketContainer.innerHTML = listOfSelectedObjects;
 													} else {
-														document.getElementById("basket__container--update").innerHTML = "None Selected!!!";
+														basketContainer.innerHTML = "None Selected!!!";
 													}
 												});
 

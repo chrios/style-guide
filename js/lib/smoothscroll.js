@@ -4,7 +4,7 @@ $('a[href*=\\#]').on('click', function(event){ 	//This wraps all <a href=#anyfoo
     event.preventDefault();						//Prevents the browser from scrolling normally to the jumplink target
 
 
-    $('html,body').animate({					//Wraps html body elements in jQuery object and
+    $('html,body').animate({					//
     											//animates the following function:
 
 
