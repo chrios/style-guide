@@ -161,16 +161,45 @@ table, th, td {
 /*------------------------*/
 
 .form__fieldset {
-	
+	margin-bottom: 2.5%;
+	text-align: center;
+	margin-top: 2.5%;
 }
 
-.form__input--text {
+.form__input--text-field {
+	width: 100%;
+}
+
+.form___input--text-area {
+	width: 100%;
 }
 
 .form__legend {
 }
 
 .form__label {
+	padding-bottom: 5px;
+}
+
+.button {
+	width: 100%;
+	display: block;
+	border-radius: 0;
+	border: 0;
+	margin-top: 1.25%;
+	margin-bottom: 1.25%;
+	height: 50px;
+}
+
+.form__input--select {
+	width: 100%;
+	display: block;
+	border-radius: 0;
+	border: 0;
+	margin-top: 1.25%;
+	margin-bottom: 1.25%;
+	height: 50px;
+
 }
 
 
