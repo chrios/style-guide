@@ -20,6 +20,15 @@ if (typeof(Storage) !== "undefined") {
 					document.getElementById("listen__form").id, 
 					document.getElementById("listen__table").id ];
 
+	/*ADD ELEMENTS TO ARRAY */
+
+	var buttonArray = [ document.getElementById("listen__colors"), 
+						document.getElementById("listen__headings"), 
+						document.getElementById("listen__paragraph"), 
+						document.getElementById("listen__list"), 
+						document.getElementById("listen__form"), 
+						document.getElementById("listen__table") ];
+
 	/* MAKE VARIABLE FOR BASKET__SEND */
 
 	var basketSend = document.getElementById("basket__send");
@@ -30,34 +39,34 @@ if (typeof(Storage) !== "undefined") {
 	/* if item is already associated with a json key when button is click the key is set to null */
 	/* otherwise the elementId is stored in json array within local storage (todo: change to session storage) */
 
-	idArray[0].addEventListener("click",  	function(){	
-												/*console.log(idArray[0]);*/
-												if (localStorage.getObj(0) === idArray[0]) {
-													localStorage.removeItem(0);
-												} else {
-													localStorage.setObj(0, idArray[0]);
-												}
-											});
+	buttonArray[0].addEventListener("click",  	function(){	
+													/*console.log(idArray[0]);*/
+													if (localStorage.getObj(0) === idArray[0]) {
+														localStorage.removeItem(0);
+													} else {
+														localStorage.setObj(0, idArray[0]);
+													}
+												});
 
-	idArray[1].addEventListener("click", 	function(){	
-												/*console.log(idArray[1]);*/
-												if (localStorage.getObj(1) === idArray[1]) {
-													localStorage.removeItem(1);
-												} else {
-													localStorage.setObj(1, idArray[1]);
-												}
-											});
+	buttonArray[1].addEventListener("click", 	function(){	
+													/*console.log(idArray[1]);*/
+													if (localStorage.getObj(1) === idArray[1]) {
+														localStorage.removeItem(1);
+													} else {
+														localStorage.setObj(1, idArray[1]);
+													}
+												});
 
-	idArray[2].addEventListener("click", 	function(){	
-												/*console.log(idArray[2]);*/
-												if (localStorage.getObj(2) === idArray[2]) {
-													localStorage.removeItem(2);
-												} else {
-													localStorage.setObj(2, idArray[2]);
-												}
-											});
+	buttonArray[2].addEventListener("click", 	function(){	
+													/*console.log(idArray[2]);*/
+													if (localStorage.getObj(2) === idArray[2]) {
+														localStorage.removeItem(2);
+													} else {
+														localStorage.setObj(2, idArray[2]);
+													}
+												});
 
-	idArray[3].addEventListener("click", 		function(){	
+	buttonArray[3].addEventListener("click", 	function(){	
 													/*console.log(idArray[3]);*/
 													if (localStorage.getObj(3) === idArray[3]) {
 														localStorage.removeItem(3);
@@ -66,7 +75,7 @@ if (typeof(Storage) !== "undefined") {
 													}
 												});
 
-	idArray[4].addEventListener("click",  		function(){	
+	buttonArray[4].addEventListener("click",  	function(){	
 													/*console.log(idArray[4]);*/
 													if (localStorage.getObj(4) === idArray[4]) {
 														localStorage.removeItem(4);
@@ -75,14 +84,14 @@ if (typeof(Storage) !== "undefined") {
 													}
 												});
 
-	idArray[5].addEventListener("click",  	function(){	
-												/*console.log(idArray[5]);*/
-												if (localStorage.getObj(5) === idArray[5]) {
-													localStorage.removeItem(5);
-												} else {
-													localStorage.setObj(5, idArray[5]);
-												}
-											});
+	buttonArray[5].addEventListener("click",  	function(){	
+													/*console.log(idArray[5]);*/
+													if (localStorage.getObj(5) === idArray[5]) {
+														localStorage.removeItem(5);
+													} else {
+														localStorage.setObj(5, idArray[5]);
+													}
+												});
 	
 
 	basketSend.addEventListener("click", 		function(){
