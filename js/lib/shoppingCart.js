@@ -43,55 +43,67 @@ if (typeof(Storage) !== "undefined") {
 
 	buttonArray[0].addEventListener("click",  	function(){	
 													/*console.log(idArray[0]);*/
-													if (localStorage.getObj(0) === idArray[0]) {
-														localStorage.removeItem(0);
+													if (sessionStorage.getObj(0) === idArray[0]) {  //if ID is already in sessionStorage
+														sessionStorage.removeItem(0);				//remove ID from storage
+														buttonArray[0].innerHTML = ("Add");			//Change button text to Add
 													} else {
-														localStorage.setObj(0, idArray[0]);
+														sessionStorage.setObj(0, idArray[0]);		//otherwise add ID to storage
+														buttonArray[0].innerHTML = ("Remove");		//Change button text to Remove
 													}
 												});
 
 	buttonArray[1].addEventListener("click", 	function(){	
 													/*console.log(idArray[1]);*/
-													if (localStorage.getObj(1) === idArray[1]) {
-														localStorage.removeItem(1);
+													if (sessionStorage.getObj(1) === idArray[1]) {  //if ID is already in sessionStorage
+														sessionStorage.removeItem(1);				//remove ID from storage
+														buttonArray[1].innerHTML = ("Add");			//Change button text to Add
 													} else {
-														localStorage.setObj(1, idArray[1]);
+														sessionStorage.setObj(1, idArray[1]);		//otherwise add ID to storage
+														buttonArray[1].innerHTML = ("Remove");		//Change button text to Remove
 													}
 												});
 
 	buttonArray[2].addEventListener("click", 	function(){	
 													/*console.log(idArray[2]);*/
-													if (localStorage.getObj(2) === idArray[2]) {
-														localStorage.removeItem(2);
+													if (sessionStorage.getObj(2) === idArray[2]) {  //if ID is already in sessionStorage
+														sessionStorage.removeItem(2);				//remove ID from storage
+														buttonArray[2].innerHTML = ("Add");			//Change button text to Add
 													} else {
-														localStorage.setObj(2, idArray[2]);
+														sessionStorage.setObj(2, idArray[2]);		//otherwise add ID to storage
+														buttonArray[2].innerHTML = ("Remove");		//Change button text to Remove
 													}
 												});
 
 	buttonArray[3].addEventListener("click", 	function(){	
 													/*console.log(idArray[3]);*/
-													if (localStorage.getObj(3) === idArray[3]) {
-														localStorage.removeItem(3);
+													if (sessionStorage.getObj(3) === idArray[3]) {  //if ID is already in sessionStorage
+														sessionStorage.removeItem(3);				//remove ID from storage
+														buttonArray[3].innerHTML = ("Add");			//Change button text to Add
 													} else {
-														localStorage.setObj(3, idArray[3]);
+														sessionStorage.setObj(3, idArray[3]);		//otherwise add ID to storage
+														buttonArray[3].innerHTML = ("Remove");		//Change button text to Remove
 													}
 												});
 
 	buttonArray[4].addEventListener("click",  	function(){	
 													/*console.log(idArray[4]);*/
-													if (localStorage.getObj(4) === idArray[4]) {
-														localStorage.removeItem(4);
+													if (sessionStorage.getObj(4) === idArray[4]) {  //if ID is already in sessionStorage
+														sessionStorage.removeItem(4);				//remove ID from storage
+														buttonArray[4].innerHTML = ("Add");			//Change button text to Add
 													} else {
-														localStorage.setObj(4, idArray[4]);
+														sessionStorage.setObj(4, idArray[4]);		//otherwise add ID to storage
+														buttonArray[4].innerHTML = ("Remove");		//Change button text to Remove
 													}
 												});
 
 	buttonArray[5].addEventListener("click",  	function(){	
 													/*console.log(idArray[5]);*/
-													if (localStorage.getObj(5) === idArray[5]) {
-														localStorage.removeItem(5);
+													if (sessionStorage.getObj(5) === idArray[5]) {  //if ID is already in sessionStorage
+														sessionStorage.removeItem(5);				//remove ID from storage
+														buttonArray[5].innerHTML = ("Add");			//Change button text to Add
 													} else {
-														localStorage.setObj(5, idArray[5]);
+														sessionStorage.setObj(5, idArray[5]);		//otherwise add ID to storage
+														buttonArray[5].innerHTML = ("Remove");		//Change button text to Remove
 													}
 												});
 	
@@ -99,10 +111,10 @@ if (typeof(Storage) !== "undefined") {
 	basketSend.addEventListener("click", 		function(){
 													  /*here insted of console.log you would send the html + css of the element to the customer email address using php perhaps*/
 													var listOfSelectedObjects = "<br>";
-													for (var i = 0; i < localStorage.length; i++) {
-														/*console.log( localStorage.key(i) +" has value " + localStorage[localStorage.key(i)] );*/
-														listOfSelectedObjects += localStorage[localStorage.key(i)] + "<br>";
-													}
+													for (var i = 0; i < sessionStorage.length; i++) {
+														/*console.log( sessionStorage.key(i) +" has value " + sessionStorage[sessionStorage.key(i)] );*/
+														listOfSelectedObjects += sessionStorage[sessionStorage.key(i)] + "<br>"; 	//loop through the storage items and add them on new lines
+													}																				//with line break in between them
 													if (listOfSelectedObjects !== "<br>") {
 														basketContainer.innerHTML = listOfSelectedObjects;
 													} else {
@@ -111,6 +123,6 @@ if (typeof(Storage) !== "undefined") {
 												});
 
 } else {
-    alert("Sorry! no localStorage support!");
+    alert("Sorry! no sessionStorage support!");
 }
 
