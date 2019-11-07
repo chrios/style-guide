@@ -2,6 +2,8 @@
 
 This is a style guide created early in my university degree BInfoTech at Charles Darwin University.
 
+You can access it [Hosted @ GitHub Pages](https://chrios.github.io/style-guide/)
+
 ## To install
 
 Clone the repo. Open index.html with your web browser. Alternatively, serve from a web browser like [nginx](https://www.nginx.com).
